@@ -8,7 +8,7 @@ type Blog = {
   content: string;
   photoTitle: string; 
 };
-
+//jklhlkj
 async function fetchBlogs(): Promise<Blog[]> {
   const res = await fetch('https://api.vercel.app/blog');
   const data = await res.json();
