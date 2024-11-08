@@ -45,8 +45,8 @@ export default function GuitarPage() {
   }
 
   return (
-    <div className="container mx-auto p-8 max-w-2xl bg-gray-900 min-h-screen">
-      <h1 className="text-4xl font-extrabold text-center text-white mb-8">Guitar Showcase 🎸</h1>
+    <div className="container mx-auto p-8 max-w-2xl bg-white min-h-screen">
+      <h1 className="text-4xl font-extrabold text-center text-black mb-8">Guitar Showcase 🎸</h1>
 
       {/* Form Section */}
       <form onSubmit={addGuitar} className="bg-gray-800 shadow-md rounded-lg p-6 mb-8">
