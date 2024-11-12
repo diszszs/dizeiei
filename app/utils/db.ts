@@ -1,7 +1,7 @@
 import { PrismaClient } from '@prisma/client';
 
 declare global {
-    // เพิ่มการประกาศตัวแปร prismaGlobal ลงใน globalThis
+// เพิ่มการประกาศตัวแปร prismaGlobal ลงใน globalThis
     var prismaGlobal: PrismaClient | undefined;
 }
 
