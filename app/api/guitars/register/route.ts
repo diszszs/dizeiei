@@ -25,10 +25,9 @@ export async function POST(request: Request) {
     });
 
     return NextResponse.json({ message: 'Registration successful' });
-  } catch (error: any) { // Typecast `error` to `any` so TypeScript knows it has a `code` property
+  } catch (error: any) {
     console.error('Error during registration:', error);
 
-    // Check for duplicate email error
     if (error.code === 'P2002') {
       return NextResponse.json({ error: 'Email already exists' }, { status: 400 });
     }
